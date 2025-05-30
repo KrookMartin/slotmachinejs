@@ -77,7 +77,9 @@ const spin = () => {
     }
     const reels = [[], [], []];
     for (let i = 0; i < COLS; i++){
+        const reelSymbols = [...symbols];
         for (let j = 0; j < ROWS; j++) {
+            const selectedSymbol = reelSymbols[]
         }
     }
     
