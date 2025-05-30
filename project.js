@@ -12,17 +12,17 @@ const ROWS = 3;
 const COLS = 3;
 
 const SYMBOLS_COUNT = {
-    "A": 2,
-    "B": 4,
-    "C": 6,
-    "D": 8
+    A: 2,
+    B: 4,
+    C: 6,
+    D: 8
 }
 
 const SYMBOLS_VALUES = {
-    "A": 5,
-    "B": 4,
-    "C": 3,
-    "D": 2
+    A: 5,
+    B: 4,
+    C: 3,
+    D: 2
 }
 
 
@@ -66,7 +66,26 @@ const getBet = (balance, lines) => {
             return numberBet;
         }
     }
-}
+};
+const spin = () => {
+    const symbols = [];
+    for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)){
+        for (let i = 0; i < count; i++){
+            symbols.push(symbol);
+
+        }
+    }
+    const reels = [[], [], []];
+    for (let i = 0; i < COLS; i++){
+        for (let j = 0; j < ROWS; j++) {
+        }
+    }
+    
+};
+
+spin();
+
+
 let  balance = deposit();
 const numberOfLines = getNumberOfLine();
 const bet = getBet(balance,numberOfLines);
